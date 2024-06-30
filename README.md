@@ -1,6 +1,27 @@
-# MfRemoto
+# Componente1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+###
+>- ng new componente1
+>- ng new componente1 --no-standalone
+>- npm install -D @angular-architects/module-federation
+>- ng add @angular-architects/module-federation --project mf-remote --port 4201 --type remote
+>- ng add @angular-architects/module-federation
+>- ng g m components/login
+>- ng g component components/login --module=components/login/login.module.ts
+>- ng g component components/login
+
+>- ng add @angular-architects/module-federation --project mf-shell --port 4200 --type host
+>- ng add @angular-architects/module-federation --project mf-shopping --port 4201 --type remote
+>- ng add @angular-architects/module-federation --project mf-payment --port 4202 --type remote
+
+>- ng new mf-shell --style=scss --routing=true
+>- ng new mf-payment --style=scss
+>- ng new mf-shopping --style=scss --routing=true
+>- ng g c components/login -m login.module
+>- --port 4200 --type host
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
 ## Development server
 
