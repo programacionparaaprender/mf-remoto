@@ -14,7 +14,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 export class ServicioPrueba {
     private _modificado:string;
     constructor() { 
-        this._modificado = 'Modificado';
+        this._modificado = 'Updated';
     }
     set modificado(value: string){
         this._modificado = value;

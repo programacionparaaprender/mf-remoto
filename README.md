@@ -47,6 +47,10 @@ Configurar cors en permisos
 >- aws s3 sync dist/mf-principal/ s3://mf-principal 
 >- aws s3 cp dist/mf-principal/index.html s3://mf-principal/index.html 
 
+### Despliegue de microfrontend en bucket compartido
+>- aws s3 sync dist/mf-remoto s3://mf-host-and-remote/mf-remoto
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
 ## Development server
