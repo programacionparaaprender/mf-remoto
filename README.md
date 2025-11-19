@@ -4,7 +4,7 @@
 >- ng new componente1
 >- ng new componente1 --no-standalone
 >- npm install -D @angular-architects/module-federation
->- ng add @angular-architects/module-federation --project mf-remote --port 4201 --type remote
+>- ng add @angular-architects/module-federation --project mf-remoto --port 4201 --type remote
 >- ng add @angular-architects/module-federation
 >- ng g m components/login
 >- ng g component components/login --module=components/login/login.module.ts
