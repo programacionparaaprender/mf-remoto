@@ -6,6 +6,7 @@ module.exports = withModuleFederationPlugin({
 
   exposes: {
     './RemotoComponent': './src/app/views/remoto/remoto.component.ts',
+    './ViejaComponent': './src/app/views/vieja/vieja.component.ts',
     './ServicioPrueba': './src/app/shared/services/servicio-prueba.ts',
   },
 

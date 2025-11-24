@@ -50,29 +50,19 @@ Configurar cors en permisos
 ### Despliegue de microfrontend en bucket compartido
 >- aws s3 sync dist/mf-remoto s3://mf-host-and-remote/mf-remoto
 
+### cursos 
+>- https://udemy.com/course/sonarqube
+>- https://udemy.com/course/angular-jasmine-karma
+>- https://udemy.com/course/angular-jasmine-karma/learn/lecture/25126866#overview
+>- https://www.udemy.com/course/angular-introduccion-a-pruebas-unitarias-y-tdd-en-espanol/learn/lecture/21281168#overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+### habilitar el coverage
+https://www.tutorialspoint.com/angular_cli/angular_cli_code_coverage.htm
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### realizar publicación en apache tomcat o rethad 7.2 EAP
+1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/angularroure/" --output-path="tomcat_publish/salida" 
+2 abrir la carpeta salida ruta frontend/tomcat_publish/
+3 copiar la carpeta WEB-INF dentro de salida ruta frontend/tomcat_publish/salida/
+4 dentro de frontend/tomcat_publish/salida gitbash(unix, linux) si usas java 7 'C:\Program Files\Java\jdk1.7.0_80\bin\jar.exe' cvf angularroute.war *
+5 copiar angularroute.war y pegar en otra ruta para que no se borre, se encuentra en frontend/tomcat_publish/salida/

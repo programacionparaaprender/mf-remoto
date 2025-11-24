@@ -1,0 +1,38 @@
+<p>vieja works!</p>
+
+<div class="game">
+
+  <div class="game-board">
+
+    <!-- Tablero 3x3 generado con @for -->
+    <div class="board">
+      @for (value of squares; track $index) {
+        <button class="square" (click)="handleClick($index)">
+          {{ value }}
+        </button>
+      }
+    </div>
+
+  </div>
+
+  <div class="game-info">
+
+    <!-- Estado del juego -->
+    <div class="status">
+      {{ status }}
+    </div>
+
+    <!-- Historial de jugadas con @for -->
+    <ol>
+      @for (item of history; track $index) {
+        <li>
+          <button (click)="jumpTo($index)">
+            Go to move #{{$index}}
+          </button>
+        </li>
+      }
+    </ol>
+
+  </div>
+
+</div>
