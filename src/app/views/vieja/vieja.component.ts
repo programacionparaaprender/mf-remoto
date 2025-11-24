@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./vieja.component.css']
 })
 export class ViejaComponent {
+
   quiengano = 'Next player: X';
-  squares: string[] = Array(9).fill(null);
-  history: { squares: string[] }[] = [
+
+  // Ahora acepta string | null
+  squares: (string | null)[] = Array(9).fill(null);
+
+  history: { squares: (string | null)[] }[] = [
     { squares: Array(9).fill(null) }
   ];
 
@@ -26,17 +30,15 @@ export class ViejaComponent {
     return 'Next player: ' + (this.xIsNext ? 'X' : 'O');
   }
 
-  mostrarSquares(i: number): string {
+  mostrarSquares(i: number): string | null {
     return this.squares[i];
   }
 
   handleClick(i: number): void {
-
     if (this.hayganador || this.squares[i]) {
       return;
     }
 
-    // Copia del historial hasta este punto
     const history = this.history.slice(0, this.stepNumber + 1);
     const current = history[history.length - 1];
     const squares = [...current.squares];
@@ -59,7 +61,7 @@ export class ViejaComponent {
     this.hayganador = !!this.calculateWinner(this.squares);
   }
 
-  calculateWinner(squares: string[]): string | null {
+  calculateWinner(squares: (string | null)[]): string | null {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -72,12 +74,15 @@ export class ViejaComponent {
     ];
 
     for (let [a, b, c] of lines) {
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
 
     return null;
   }
-
 }
