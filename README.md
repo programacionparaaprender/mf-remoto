@@ -60,6 +60,11 @@ Configurar cors en permisos
 https://www.tutorialspoint.com/angular_cli/angular_cli_code_coverage.htm
 
 
+#
+>- npx angular-cli-ghpages --dir=dist/mf-remoto --branch=gh-pages --no-silent
+>- "github": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/mf-remoto --branch=gh-pages"
+
+
 ### realizar publicación en apache tomcat o rethad 7.2 EAP
 1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/angularroure/" --output-path="tomcat_publish/salida" 
 2 abrir la carpeta salida ruta frontend/tomcat_publish/
