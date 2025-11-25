@@ -1,4 +1,2 @@
-/remoteEntry.js
-  Access-Control-Allow-Origin: *
-  Access-Control-Allow-Methods: GET, OPTIONS
-  Access-Control-Allow-Headers: *
+/*
+  Access-Control-Allow-Origin: https://6925c64b1b75250008fb9356--mf-host-web.netlify.app
