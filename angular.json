@@ -18,10 +18,17 @@
 						],
 						"tsConfig": "tsconfig.app.json",
 						"assets": [
+							"src/favicon.ico",
+  							"src/assets",
 							{
 								"glob": "**/*",
 								"input": "public",
 								"output": "."
+							},
+							{
+								"glob": "_headers",
+								"input": "src",
+								"output": "/"
 							}
 						],
 						"styles": [
