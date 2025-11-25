@@ -1,0 +1,27 @@
+
+<div style="text-align:center">
+    <div>
+        <h1>{{ 'productos' | uppercase }}</h1>
+    @for(product of productValue; track product){
+        {{product.name}}
+    }
+
+    </div>
+</div>
+<div class="card card-default">
+    <form class="form"[formGroup]="registerForm" (ngSubmit)="addNewProduct()">
+        <div class="form-group">
+            <input class="form-control" formControlName="name"  name="name" value="" placeholder="Name" />
+        </div>
+        <div class="form-group">
+            <input class="form-control" formControlName="description"  name="description" value="" placeholder="Description" />
+        </div>
+        <div class="form-group">
+            <input class="form-control" formControlName="amount"  name="amount" value="" placeholder="Amount" />
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Add Product</button>
+            <button class="btn btn-danger" type="reset" (click)="resetValue()">Reset Product</button>
+        </div>
+    </form>
+</div>

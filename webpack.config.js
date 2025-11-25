@@ -8,8 +8,9 @@ module.exports = withModuleFederationPlugin({
     './RemotoComponent': './src/app/views/remoto/remoto.component.ts',
     './ViejaComponent': './src/app/views/vieja/vieja.component.ts',
     './ServicioPrueba': './src/app/shared/services/servicio-prueba.ts',
+    './MyComponentComponent': './src/app/views/my-component/my-component.component.ts',
+    './ListUserComponent': './src/app/views/users/list-users/list-users.component',
   },
-
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },

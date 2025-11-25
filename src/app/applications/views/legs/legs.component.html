@@ -1,0 +1,27 @@
+<div>
+  <div class="class5rem"></div>
+
+  <h1>{{ title }}</h1>
+  <p>{{ descripcion }}</p>
+  <p>{{ partesentrenar }}</p>
+
+  <ul class="list-group">
+
+    <!-- Reemplazo de *ngFor con @for -->
+    @for (link of links; track link) {
+      <li class="list-group-item">
+        <a [href]="link.url">{{ link.name }}</a>
+      </li>
+    }
+
+    <!-- Los dos elementos extras se mantienen -->
+    <li class="list-group-item">
+      <a [href]="links[0].url">{{ links[0].name }}</a>
+    </li>
+
+    <li class="list-group-item">
+      <a [href]="links[1].url">{{ links[1].name }}</a>
+    </li>
+
+  </ul>
+</div>
