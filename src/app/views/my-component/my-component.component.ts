@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { firstValueFrom, Observable } from 'rxjs';
-import { AsyncPipe, CommonModule } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { AppState } from '../../store/app.state';
 import { selectSomeValue } from '../../store/example/example.selectors';
 import { selectCounterValue } from '../../store/counter/counter.selectors';
