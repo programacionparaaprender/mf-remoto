@@ -1,7 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { of } from 'rxjs';
 import { ProductDto } from '../../dtos/products/product.dto';
-import { ProductMapper } from '../../mappers/products/product.mapper';
+import { ProductMapper } from '../../dtos/products/mappers/products/product.mapper';
+
 
 let products = [
     {

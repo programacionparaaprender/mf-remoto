@@ -10,6 +10,7 @@ module.exports = withModuleFederationPlugin({
     './ServicioPrueba': './src/app/shared/services/servicio-prueba.ts',
     './MyComponentComponent': './src/app/views/my-component/my-component.component.ts',
     './ListUserComponent': './src/app/views/users/list-users/list-users.component',
+    './UsersComponent': './src/app/views/users/users/users/users.component',
   },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),

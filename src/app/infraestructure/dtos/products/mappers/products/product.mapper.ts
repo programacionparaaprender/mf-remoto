@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
-import { ProductEntity } from "../../../domain/entities/products/product.entity";
-import { ProductDto } from "../../dtos/products/product.dto";
+import { ProductDto } from "../../product.dto";
+import { ProductEntity } from "../../../../../domain/entities/products/product.entity";
+
 
 @Injectable({
     providedIn: 'root',

@@ -5,6 +5,7 @@ import { ViejaComponent } from './views/vieja/vieja.component';
 import { MyComponentComponent } from './views/my-component/my-component.component';
 import { ListProductsComponent } from './views/products/list-products/list-products.component';
 import { ListUserComponent } from './views/users/list-users/list-users.component';
+import { UsersComponent } from './views/users/users/users/users.component';
 
 export const routes: Routes = [
     { path: '',  redirectTo: '/masteraspnet', pathMatch: 'full' },
@@ -14,4 +15,5 @@ export const routes: Routes = [
   { path: 'component' , component: MyComponentComponent},
   { path: 'list-products' , component: ListProductsComponent},
   { path: 'list-users' , component: ListUserComponent},
+  { path: 'users' , component: UsersComponent},
 ];
