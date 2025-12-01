@@ -11,6 +11,8 @@ module.exports = withModuleFederationPlugin({
     './MyComponentComponent': './src/app/views/my-component/my-component.component.ts',
     './ListUserComponent': './src/app/views/users/list-users/list-users.component',
     './UsersComponent': './src/app/views/users/users/users/users.component',
+    './Signals': './src/app/views/signals/signals',
+    './ParentComponent': './src/app/views/parent/parent.component',
   },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),

@@ -1,0 +1,18 @@
+<div class="card card-default">
+    <p>signals works!</p>
+    <p>{{selectedIndex()}}</p>
+    <p>{{ computedTest() }}</p>
+    <button class="btn btn-primary" (click)="metodoSet()">Método set</button>
+    <button class="btn btn-secondary" (click)="metodoUpdate()">Método update</button>
+    <button class="btn btn-primary" (click)="metodoSetCounter()">Método set contador</button>
+    <button class="btn btn-secondary" (click)="metodoUpdateCounter()">Método update contador</button>
+    <div class="tabs">
+    @for (link of tabs(); track link) {
+      <li class="list-group-item">
+        <a>{{ link.label }}</a>
+      </li>
+    }
+    </div>
+    <button class="btn btn-info" (click)="addTab()">Añadir Tab</button>
+    <button class="btn btn-info" (click)="removeTab()">Remover Tab</button>
+</div>

@@ -1,5 +1,8 @@
 # Componente1
 
+## cursos angular
+>- https://www.udemy.com/course/domina-los-signals-en-angular-version-19/learn/lecture/48881777#overview
+
 ###
 >- ng new componente1
 >- ng new componente1 --no-standalone
